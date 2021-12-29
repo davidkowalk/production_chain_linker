@@ -1,0 +1,30 @@
+{
+	"Inserter": {
+		"units_per_time": 2,
+		"requires": {"Iron Plate": 1, "Gear": 1, "Electronic Circuit": 1}
+	},
+
+	"Gear": {
+		"units_per_time": 2,
+		"requires": {"Iron Plate": 2}
+	},
+
+	"Electronic Circuit": {
+		"units_per_time": 2,
+		"requires": {"Copper Cable": 3, "Iron Plate": 1}
+	},
+
+	"Copper Cable": {
+		"units_per_time": 4,
+		"requires": {"Copper Plate": 0.5}
+	},
+
+	"Iron Plate": {
+		"units_per_time": 0.3125,
+	},
+
+	"Copper Plate": {
+		"units_per_time": 0.3125,
+		"comment": "the requires node can be empty or missing"
+	}
+}
