@@ -1,6 +1,7 @@
 import json
 from sys import argv
 from engine.graph_gen import get_graph
+from engine.console_interface import loop
 
 helpstr = """
     Syntax:
@@ -64,9 +65,12 @@ def main(args):
     else:
         head_id, head_amount = input_head()
 
-    print(head_id)
-    graph = get_graph(jobj, head_id)
+    graph, nodes = get_graph(jobj, head_id)
 
+    if argv["dump"]:
+        print(graph)
+
+    loop(graph, nodes)
 
 if __name__ == '__main__':
     main(argv)
