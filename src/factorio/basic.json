@@ -1,0 +1,240 @@
+{
+  "dummy": {
+    "units_per_time": 0,
+    "requires": {"dummy": 1}
+  },
+
+  "Wooden chest": {
+    "units_per_time": 2,
+    "requires": {"Wood": 2}
+  },
+
+  "Iron chest": {
+    "units_per_time": 2,
+    "requires": {"Iron plate": 8}
+  },
+
+  "Steel chest": {
+    "units_per_time": 2,
+    "requires": {"Steel plate": 8}
+  },
+
+  "Storage tank": {
+    "units_per_time": 0.33,
+    "requires": {
+      "Iron plate": 20,
+      "Steel plate": 5
+    }
+  },
+
+  "Transport belt": {
+    "units_per_time": 4,
+    "requires": {
+      "Iron gear wheel": 0.5,
+      "Iron plate": 0.5
+    }
+  },
+
+  "Fast transport belt": {
+    "units_per_time": 2,
+    "requires": {
+      "Iron gear wheel": 5,
+      "Transport belt": 1
+    }
+  },
+
+  "Express transport belt": {
+    "units_per_time": 2,
+    "requires": {
+      "Fast transport belt": 1,
+      "Iron gear wheel": 10,
+      "Lubricant": 20
+    }
+  },
+
+  "Underground belt": {
+    "units_per_time": 2,
+    "requires": {
+      "Iron plate": 10,
+      "Transport belt": 5
+    }
+  },
+
+  "Fast underground belt": {
+    "units_per_time": 1,
+    "requires": {
+      "Iron gear wheel": 20,
+      "Underground belt": 1
+    }
+  },
+
+  "Express underground belt": {
+    "units_per_time": 1,
+    "requires": {
+      "Iron gear wheel": 40,
+      "Fast underground belt": 1,
+      "Lubricant": 20
+    }
+  },
+
+  "Splitter": {
+    "units_per_time": 1,
+    "requires": {
+      "Electronic circuit": 5,
+      "Iron plate": 5,
+      "Transport belt": 4
+    }
+  },
+
+  "Fast Splitter": {
+    "units_per_time": 0.5,
+    "requires": {
+      "Electronic circuit": 10,
+      "Iron gear wheel": 10,
+      "Splitter": 1
+    }
+  },
+
+  "Express Splitter": {
+    "units_per_time": 0.5,
+    "requires": {
+      "Advanced circuit": 10,
+      "Iron gear wheel": 10,
+      "Fast splitter": 1,
+      "Lubricant": 80
+    }
+  },
+
+  "Burner inserter": {
+    "units_per_time": 2,
+    "requires": {"Iron gear wheel": 1, "Iron plate": 1}
+  },
+
+  "Inserter": {
+    "units_per_time": 2,
+    "requires": {"Electronic circuit": 1, "Iron plate": 1, "Iron gear wheel": 1}
+  },
+
+  "Long-handed inserter": {
+    "units_per_time": 2,
+    "requires": {"Inserter": 1, "Iron plate": 1, "Iron gear wheel": 1}
+  },
+
+  "Fast inserter": {
+    "units_per_time": 2,
+    "requires": {"Electronic circuit": 2, "Inserter": 1, "Iron plate": 2}
+  },
+
+  "Filter inserter": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 4,
+      "Fast inserter": 1
+    }
+  },
+
+  "Stack inserter": {
+    "units_per_time": 2,
+    "requires": {
+      "Advanced circuit": 1,
+      "Electronic circuit": 15,
+      "Fast inserter": 1,
+      "Iron gear wheel": 15
+    }
+  },
+
+  "Stack filter inserter": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 5,
+      "Stack inserter": 1
+    }
+  },
+
+  "Small electric pole": {
+    "units_per_time": 4,
+    "requires": {
+      "Copper cable": 1,
+      "Wood": 0.5
+    }
+  },
+
+  "Medium electric pole": {
+    "units_per_time": 2,
+    "requires": {
+      "Copper plate": 2,
+      "Iron stick": 4,
+      "Steel plate": 2
+    }
+  },
+
+  "Big electric pole": {
+    "units_per_time": 2,
+    "requires": {
+      "Copper plate": 5,
+      "Iron stick": 8,
+      "Steel plate": 5
+    }
+  },
+
+  "Substation": {
+    "units_per_time": 2,
+    "requires": {
+      "Advanced circuit": 5,
+      "Copper plate": 5,
+      "Steel plate": 10
+    }
+  },
+
+  "Pipe": {
+    "units_per_time": 2,
+    "requires": {
+      "Iron plate": 1
+    }
+  },
+
+  "Pipe to ground": {
+    "units_per_time": 4,
+    "requires": {
+      "Pipe": 5,
+      "Iron plate": 2.5
+    }
+  },
+
+  "Pump": {
+    "units_per_time": 0.5,
+    "requires": {
+      "Engine unit": 1,
+      "Pipe": 1,
+      "Steel plate": 1
+    }
+  },
+
+  "-----------------------------------------------------------":"",
+
+
+	"Iron gear wheel": {
+		"units_per_time": 2,
+		"requires": {"Iron Plate": 2}
+	},
+
+	"Electronic circuit": {
+		"units_per_time": 2,
+		"requires": {"Copper Cable": 3, "Iron Plate": 1}
+	},
+
+	"Copper cable": {
+		"units_per_time": 4,
+		"requires": {"Copper Plate": 0.5}
+	},
+
+	"Iron plate": {
+		"units_per_time": 0.3125,
+    "requires": {"Iron Ore": 1, "Coal": 0.0225}
+	},
+
+	"Copper plate": {
+		"units_per_time": 0.3125,
+    "requires": {"Copper Ore": 1, "Coal": 0.0225}
+	}
+}
