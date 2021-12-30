@@ -29,8 +29,8 @@ def get_node(chain, node_id, nodes = None, log = None):
 
     if "requires" in node_json:
         for entry in node_json["requires"]:
-
-            if node_id not in chain:
+            print(f"{node_id}: {entry}")
+            if entry not in chain:
                 raise ValueError(f"Error: Missing production chain link!\n\"{node_id}\" requires: \"{entry}\"")
 
             head.add_child(get_node(chain, entry, nodes = nodes, log=log+[node_id]), node_json["requires"][entry])

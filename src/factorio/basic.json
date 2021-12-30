@@ -210,31 +210,339 @@
     }
   },
 
-  "-----------------------------------------------------------":"",
+  "Rail": {
+    "units_per_time": 4,
+    "requires": {
+      "Iron stick": 0.5,
+      "Steel plate": 0.5,
+      "Stone": 0.5
+    }
+  },
 
+  "Train stop": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 5,
+      "Iron plate": 6,
+      "Iron stick": 6,
+      "Steel plate": 3
+    }
+  },
+
+  "Rail signal": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 1,
+      "Iron plate": 5
+    }
+  },
+
+  "Rail chain signal": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 1,
+      "Iron plate": 5
+    }
+  },
+
+  "Locomotive": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Electronic circuit": 10,
+      "Engine unit": 20,
+      "Steel plate": 30
+    }
+  },
+
+  "Cargo wagon": {
+    "units_per_time": 1,
+    "requires": {
+      "Iron gear wheel": 10,
+      "Iron plate": 20,
+      "Steel plate": 20
+    }
+  },
+
+  "Fluid wagon": {
+    "units_per_time": 0.667,
+    "requires": {
+      "Iron gear wheel": 10,
+      "Pipe": 8,
+      "Steel plate": 16,
+      "Storage tank": 1
+    }
+  },
+
+  "Artillery wagon": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Advanced circuit": 20,
+      "Engine unit": 64,
+      "Iron gear wheel": 10,
+      "Pipe": 16,
+      "Steel plate": 40
+    }
+  },
+
+  "Car": {
+    "units_per_time": 0.5,
+    "requires": {
+      "Engine unit": 8,
+      "Iron plate": 20,
+      "Steel plate": 5
+    }
+  },
+
+  "Tank": {
+    "units_per_time": 0.2,
+    "requires": {
+      "Advanced circuit": 10,
+      "Engine unit": 32,
+      "Iron gear wheel": 15,
+      "Steel plate": 50
+    }
+  },
+
+  "Spidertron": {
+    "units_per_time": 0.1,
+    "requires": {
+      "Efficiency module 3": 2,
+      "Exoskeleton": 4,
+      "Portable fusion reactor": 2,
+      "Low density structure": 150,
+      "Radar": 2,
+      "Raw fish": 1,
+      "Rocket control unit": 16,
+      "Rocket launcher": 4
+    }
+  },
+
+  "Spidertron remote": {
+    "units_per_time": 2,
+    "requires": {
+      "Radar": 1,
+      "Rocket control unit": 1
+    }
+  },
+
+  "Logistic robot": {
+    "units_per_time": 2,
+    "requires": {
+      "Advanced circuit": 2,
+      "Flying robot frame": 1
+    }
+  },
+
+  "Construction robot": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 2,
+      "Flying robot frame": 1
+    }
+  },
+
+  "Active provider chest": {
+    "units_per_time": 2,
+    "requires": {
+      "Advanced circuit": 1,
+      "Electronic circuit": 3,
+      "Steel chest": 1
+    }
+  },
+
+  "Passive provider chest": {
+    "units_per_time": 2,
+    "requires": {
+      "Advanced circuit": 1,
+      "Electronic circuit": 3,
+      "Steel chest": 1
+    }
+  },
+
+  "Storage chest": {
+    "units_per_time": 2,
+    "requires": {
+      "Advanced circuit": 1,
+      "Electronic circuit": 3,
+      "Steel chest": 1
+    }
+  },
+
+  "Buffer chest": {
+    "units_per_time": 2,
+    "requires": {
+      "Advanced circuit": 1,
+      "Electronic circuit": 3,
+      "Steel chest": 1
+    }
+  },
+
+  "Requester chest": {
+    "units_per_time": 2,
+    "requires": {
+      "Advanced circuit": 1,
+      "Electronic circuit": 3,
+      "Steel chest": 1
+    }
+  },
+
+  "Robotport": {
+    "units_per_time": 0.2,
+    "requires": {
+      "Advanced circuit": 45,
+      "Iron gear wheel": 45,
+      "Steel plate": 45
+    }
+  },
+
+  "Lamp": {
+    "units_per_time": 2,
+    "requires": {
+      "Copper cable": 3,
+      "Electronic circuit": 1,
+      "Iron plate": 1
+    }
+  },
+
+  "Red wire": {
+    "units_per_time": 2,
+    "requires": {
+      "Copper cable": 1,
+      "Electronic circuit": 1
+    }
+  },
+
+  "Green wire": {
+    "units_per_time": 2,
+    "requires": {
+      "Copper cable": 1,
+      "Electronic circuit": 1
+    }
+  },
+
+  "Arithmetic combiner": {
+    "units_per_time": 2,
+    "requires": {
+      "Copper cable": 5,
+      "Electronic circuit": 5
+    }
+  },
+
+  "Decider combiner": {
+    "units_per_time": 2,
+    "requires": {
+      "Copper cable": 5,
+      "Electronic circuit": 5
+    }
+  },
+
+  "Constant combinator": {
+    "units_per_time": 2,
+    "requires": {
+      "Copper cable": 5,
+      "Electronic circuit": 2
+    }
+  },
+
+  "Power switch": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Copper cable": 5,
+      "Electronic circuit": 2,
+      "Iron plate": 5
+    }
+  },
+
+  "Programmable speaker": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Copper cable": 5,
+      "Electronic circuit": 4,
+      "Iron plate": 3,
+      "Iron stick": 4
+    }
+  },
+
+  "Stone brick": {
+    "units_per_time": 0.3125,
+    "requires": {
+      "Stone": 2
+    }
+  },
+
+  "Concrete": {
+    "units_per_time": 1,
+    "requires": {
+      "Iron ore": 0.1,
+      "Stone brick": 0.5,
+      "Water": 10
+    }
+  },
+
+  "Hazard concrete": {
+    "units_per_time": 40,
+    "requires": {
+      "Concrete": 1
+    }
+  },
+
+  "Refined concrete": {
+    "units_per_time": 0.667,
+    "requires": {
+      "Concrete": 2,
+      "Iron stick": 0.8,
+      "Steel plate": 0.1,
+      "Water": 100
+    }
+  },
+
+  "Refined hazard concrete": {
+    "units_per_time": 40,
+    "requires": {
+      "Refined concrete": 1
+    }
+  },
+
+  "Landfill": {
+    "units_per_time": 2,
+    "requires": {
+      "Stone": 20
+    }
+  },
+
+  "Cliff explosives": {
+    "units_per_time": 0.125,
+    "requires": {
+      "Empty barrel": 1,
+      "Explosives": 10,
+      "Grenade": 1
+    }
+  },
+
+  "-----------------------------------------------------------":"",
 
 	"Iron gear wheel": {
 		"units_per_time": 2,
-		"requires": {"Iron Plate": 2}
+		"requires": {"Iron plate": 2}
 	},
 
 	"Electronic circuit": {
 		"units_per_time": 2,
-		"requires": {"Copper Cable": 3, "Iron Plate": 1}
+		"requires": {"Copper cable": 3, "Iron plate": 1}
 	},
 
 	"Copper cable": {
 		"units_per_time": 4,
-		"requires": {"Copper Plate": 0.5}
+		"requires": {"Copper plate": 0.5}
 	},
 
 	"Iron plate": {
 		"units_per_time": 0.3125,
-    "requires": {"Iron Ore": 1, "Coal": 0.0225}
+    "requires": {"Iron ore": 1, "Coal": 0.0225}
 	},
 
 	"Copper plate": {
 		"units_per_time": 0.3125,
-    "requires": {"Copper Ore": 1, "Coal": 0.0225}
+    "requires": {"Copper ore": 1, "Coal": 0.0225}
 	}
 }
