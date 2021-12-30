@@ -29,7 +29,6 @@ def get_node(chain, node_id, nodes = None, log = None):
 
     if "requires" in node_json:
         for entry in node_json["requires"]:
-            print(f"{node_id}: {entry}")
             if entry not in chain:
                 raise ValueError(f"Error: Missing production chain link!\n\"{node_id}\" requires: \"{entry}\"")
 

@@ -519,30 +519,203 @@
     }
   },
 
-  "-----------------------------------------------------------":"",
+  "Crude oil": {
+    "units_per_time": 10,
+    "comment": "Changes with yield of field."
+  },
 
-	"Iron gear wheel": {
+  "Heavy oil": {
+    "units_per_time": 5,
+    "requires": {
+      "Crude oil": 4,
+      "Water": 2
+    },
+    "comment": "With advanced oil processing"
+  },
+
+  "Lubricant": {
+    "units_per_time": 10,
+    "requires": {
+      "Heavy oil": 1
+    },
+  },
+
+  "Petrolium gas": {
+    "units_per_time": 11,
+    "requires": {
+      "Crude oil": 1.8182,
+      "Water": 0.9091,
+    }
+  },
+
+  "Sulfuric acid": {
+    "units_per_time": 50,
+    "requires": {
+      "Iron plate": 0.02,
+      "Sulfur": 0.1,
+      "Water": 2
+    }
+  },
+
+  "Water": {
+    "units_per_time": 1200
+  },
+
+  "Steam": {
+    "units_per_time": 60,
+    "requires": {
+      "Water": 1
+    }
+  },
+
+  "Wood": {
+    "units_per_time": 2,
+    "comment": "Must be mined by player."
+  },
+
+  "Coal": {
+    "units_per_time": 0.5,
+    "comment": "Assume electric drill, without any modules."
+  },
+
+  "Stone": {
+    "units_per_time": 0.5,
+    "comment": "Assume electric drill, without any modules."
+  },
+
+  "Iron ore": {
+    "units_per_time": 0.5,
+    "comment": "Assume electric drill, without any modules."
+  },
+
+  "Copper ore": {
+    "units_per_time": 0.5,
+    "comment": "Assume electric drill, without any modules."
+  },
+
+  "Uranium ore": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Sulfuric acid": 1
+    },
+    "comment": "Assume electric drill, without any modules."
+  },
+
+  "Raw fish": {
+    "units_per_time": 0.1,
+    "comment": "Fish are \"mined\" by hand in a body of water."
+  },
+
+  "Iron plate": {
+  	"units_per_time": 0.3125,
+   "requires": {"Iron ore": 1, "Coal": 0.0225}
+  },
+
+  "Copper plate": {
+		"units_per_time": 0.3125,
+    "requires": {"Copper ore": 1, "Coal": 0.0225}
+  },
+
+  "Solid fuel": {
+    "units_per_time": 0.5,
+    "comment": "There are multiple options of manufacturing, so a production chain has to be manually determined"
+  },
+
+  "Steel plate": {
+    "units_per_time": 0.0625,
+    "requires": {
+      "Iron plate": 5
+    }
+  },
+
+  "Plastic bar": {
+    "units_per_time": 2,
+    "requires": {
+      "Coal": 0.5,
+      "Petrolium gas": 10
+    }
+  },
+
+  "Sulfur": {
+    "units_per_time": 2,
+    "requires": {
+      "Petrolium gas": 15,
+      "Water": 15
+    }
+  },
+
+  "Battery": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Copper plate": 1,
+      "Iron plate": 1,
+      "Sulfuric acid": 20
+    }
+  },
+
+  "Explosives": {
+    "units_per_time": 0.5,
+    "requires": {
+      "Coal": 0.5,
+      "Sulfur": 0.5,
+      "Water": 5
+    }
+  },
+
+  "Uranium processing": {},
+
+
+  "Copper cable": {
+  	"units_per_time": 4,
+  	"requires": {"Copper plate": 0.5}
+  },
+
+  "Iron stick": {
+    "units_per_time": 4,
+    "requires": {
+      "Iron plate": 0.5
+    }
+  },
+
+  "Iron gear wheel": {
 		"units_per_time": 2,
 		"requires": {"Iron plate": 2}
 	},
 
-	"Electronic circuit": {
-		"units_per_time": 2,
-		"requires": {"Copper cable": 3, "Iron plate": 1}
-	},
+  "Barrel": {
+    "units_per_time": 1,
+    "requires" : {"Steel plate": 1}
+  },
 
-	"Copper cable": {
-		"units_per_time": 4,
-		"requires": {"Copper plate": 0.5}
-	},
+  "Electronic circuit": {
+    "units_per_time": 2,
+    "requires": {"Copper cable": 3, "Iron plate": 1}
+  },
 
-	"Iron plate": {
-		"units_per_time": 0.3125,
-    "requires": {"Iron ore": 1, "Coal": 0.0225}
-	},
+  "Advanced circuit": {
+    "units_per_time": 0.1667,
+    "requires": {
+      "Copper cable": 4,
+      "Electronic circuit": 1,
+      "Plastic bar": 2
+    }
+  },
 
-	"Copper plate": {
-		"units_per_time": 0.3125,
-    "requires": {"Copper ore": 1, "Coal": 0.0225}
-	}
+  "Processing unit": {
+    "units_per_time": 0.1,
+    "requires": {
+      "Advanced circuit": 2,
+      "Electronic circuit": 20,
+      "Sulfuric acid": 5
+    }
+  },
+
+  "Engine unit": {
+    "units_per_time": 0.1,
+    "requires": {
+      "Iron gear wheel": 1,
+      "Pipe": 2,
+      "Steel plate": 1
+    }
+  },
 }
