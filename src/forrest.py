@@ -16,7 +16,9 @@ helpstr = """
 
 def input_head():
     id = input("Head Node: ")
-    amount = float("Amount")
+    amount = float(input("Amount"))
+
+    return id, amount
 
 def decode_args(args):
 

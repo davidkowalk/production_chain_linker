@@ -537,14 +537,14 @@
     "units_per_time": 10,
     "requires": {
       "Heavy oil": 1
-    },
+    }
   },
 
   "Petrolium gas": {
     "units_per_time": 11,
     "requires": {
       "Crude oil": 1.8182,
-      "Water": 0.9091,
+      "Water": 0.9091
     }
   },
 

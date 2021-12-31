@@ -1,5 +1,7 @@
 # Production Forrest
 
+> This script is currently in alpha and I am working on the main branch. It is highly unstable and may be untested.
+
 The Production-Forrest takes a json file describing linked nodes and will tell you, how scale your production chain.
 
 The script has been written for a just-in-time production chain, specifically taylored for the video game "factorio".
