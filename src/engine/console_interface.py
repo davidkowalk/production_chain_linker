@@ -1,20 +1,24 @@
-modified_scale = False
 current_scale = 0
 
-def loop(chain_tree, nodes: dict):
+def loop(chain_tree, nodes: dict, scale):
+    global current_scale
+    current_scale = scale
+    chain_tree.count(scale)
+
     while True:
         print("-"*20)
 
         print("Options:\n\
+                [0] Exit\n\
                 [1] Print Production chain.\n\
                 [2] Specify units per time to be produced.\n\
-                [3] Get amount of an item in the chain to be produced\n\
-                [4] Exit")
+                [3] Get amount of an item in the chain to be produced\
+            ")
 
         try:
             choice = int(input("> "))
 
-            if choice == 0 or choice > 4:
+            if choice < 0 or choice > 3:
                 print("Please choose between one of the options.")
                 continue
         except:
@@ -22,12 +26,13 @@ def loop(chain_tree, nodes: dict):
             continue
 
         if choice == 1:
+            print("Format: Name (Items required for parent) [Production units required for scale]")
             print(chain_tree)
         elif choice == 2:
             scale_ui(chain_tree)
         elif choice == 3:
             total_node_ui(nodes)
-        elif choice == 4:
+        elif choice == 0:
             exit()
 
 def scale_ui(chain_tree):
@@ -47,12 +52,7 @@ def scale_ui(chain_tree):
 def set_tree_scale(head, scale):
     global modified_scale
 
-    # First Reset the counter
-    if not modified_scale:
-        modified_scale = True
-    else:
-        head.reset_count() #clear count for entire tree
-
+    head.reset_count() #clear count for entire tree
     head.count(scale)
 
 def total_node_ui(node_list):
@@ -83,4 +83,4 @@ def total_node_ui(node_list):
         calc_amount(lookup[i])
 
 def calc_amount(node):
-    print(f"\n{node.id}: {node.total}/(Unit of time)\n")
+    print(f"\n{node.id}: {node.total}/(Unit of time)\nYou will need {node.total/node.speed:.1f} units of production.\n")

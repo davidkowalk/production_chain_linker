@@ -16,7 +16,7 @@ helpstr = """
 
 def input_head():
     id = input("Head Node: ")
-    amount = float(input("Amount"))
+    amount = float(input("Amount: "))
 
     return id, amount
 
@@ -72,7 +72,7 @@ def main(args):
     if argv["dump"]:
         print(graph)
 
-    loop(graph, nodes)
+    loop(graph, nodes, head_amount)
 
 if __name__ == '__main__':
     main(argv)

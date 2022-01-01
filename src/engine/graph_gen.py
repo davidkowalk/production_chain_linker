@@ -18,7 +18,7 @@ def get_node(chain, node_id, nodes = None, log = None):
 
     #print(node_id)
 
-    head = Node(node_id)
+    head = Node(node_id, chain[node_id]["units_per_time"])
     nodes[node_id] = head
 
     if node_id in log:
@@ -38,8 +38,9 @@ def get_node(chain, node_id, nodes = None, log = None):
 
 class Node:
 
-    def __init__(self, id):
+    def __init__(self, id, units_per_time):
         self.id = id
+        self.speed = units_per_time
         self.children = list()
         self.scale = list()
         self.total = 0 #Will hold the total of weighted occurences in tree
@@ -47,10 +48,31 @@ class Node:
     #def __repr__(self):
     #    return str(self)
 
-    def __str__(self, amount = 1, level = 0):
-        output = " "*level+"-"+self.id+f" ({amount})\n"
+    def __str__(self, amount = 1, parent_str = "", last = True):
+        #output = " "*level+"-"+self.id+f" ({amount})\n"
+        #┃┣ ━┗ ┻ ┳
+        output = parent_str
+        if last:
+            if len(self.children) > 0:
+                output += "┗┳"
+            else:
+                output += "┗━"
+        else:
+            if len(self.children) > 0:
+                output += "┣┳"
+            else:
+                output += "┣━"
+
+        output += self.id+f" ({amount}) [{self.total/self.speed:.1f}]\n"
+
         for child in self.children:
-            output += child.__str__(self.scale[self.children.index(child)],level+1)
+            #output += child.__str__(self.scale[self.children.index(child)],level+1)
+            child_is_last = self.children.index(child) == len(self.children)-1
+
+            if last:
+                output += child.__str__(amount = self.scale[self.children.index(child)], parent_str = parent_str+" ", last = child_is_last)
+            else:
+                output += child.__str__(amount = self.scale[self.children.index(child)], parent_str = parent_str+"┃", last = child_is_last)
 
         return output
 
