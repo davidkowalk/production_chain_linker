@@ -533,6 +533,14 @@
     "comment": "With advanced oil processing"
   },
 
+  "Light oil": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Crude oil": 2.222222222,
+      "Water": 1.111111111
+    }
+  },
+
   "Lubricant": {
     "units_per_time": 10,
     "requires": {
@@ -871,5 +879,326 @@
       "Rocket part": 0.1,
       "Satellite": 0.001
     }
+  },
+
+  "Repair pack": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 2,
+      "Iron gear wheel": 2
+    }
+  },
+
+  "Boiler": {
+    "units_per_time": 2,
+    "requires": {
+      "Pipe": 4,
+      "Stone furnace": 1
+    }
+  },
+
+  "Steam engine": {
+    "units_per_time": 2,
+    "requires": {
+      "Iron gear wheel": 8,
+      "Iron plate": 10,
+      "Pipe": 5
+    }
+  },
+
+  "Solar panel": {
+    "units_per_time": 0.1,
+    "requires": {
+      "Copper plate": 5,
+      "Electronic circuit": 15,
+      "Steel plate": 5
+    }
+  },
+
+  "Accumulator": {
+    "units_per_time": 0.1,
+    "requires": {
+      "Battery": 5,
+      "Iron plate": 2
+    }
+  },
+
+  "Nuclear reactor": {
+    "units_per_time": 0.125,
+    "requires": {
+      "Advanced circuit": 500,
+      "Concrete": 500,
+      "Copper plate": 500,
+      "Steel plate": 500
+    }
+  },
+
+  "Heat pipe": {
+    "units_per_time": 1,
+    "requires": {
+      "Copper plate": 20,
+      "Steel plate": 10
+    }
+  },
+
+  "Heat exchanger": {
+    "units_per_time": 0.33333,
+    "requires": {
+      "Copper plate": 100,
+      "Pipe": 100,
+      "Steel plate": 10
+    }
+  },
+
+  "Steam turbine": {
+    "units_per_time": 0.33333,
+    "requires": {
+      "Copper plate": 50,
+      "Iron gear wheel": 50,
+      "Pipe": 20
+    }
+  },
+
+  "Burner mining drill" : {
+    "units_per_time": 0.5,
+    "requires": {
+      "Iron gear wheel": 3,
+      "Iron plate": 3,
+      "Stone furnace": 1
+    }
+  },
+
+  "Electric mining drill": {
+    "units_per_time": 0.5,
+    "requires": {
+      "Electronic circuit": 3,
+      "Iron gear wheel": 5,
+      "Iron plate": 10
+    }
+  },
+
+  "Offshore Pump": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 2,
+      "Iron gear wheel": 1,
+      "Pipe": 1
+    }
+  },
+
+  "Pumpjack": {
+    "units_per_time": 0.2,
+    "requires": {
+      "Electronic circuit": 5,
+      "Iron gear wheel": 10,
+      "Pipe": 10,
+      "Steel plate": 5
+    }
+  },
+
+  "Stone furnace": {
+    "units_per_time": 2,
+    "requires": {
+      "Stone": 5
+    }
+  },
+
+  "Steel furnace": {
+    "units_per_time": 0.33333,
+    "requires": {
+      "Steel plate": 6,
+      "Stone brick": 10
+    }
+  },
+
+  "Electronic furnace": {
+    "units_per_time": 0.2,
+    "requires": {
+      "Advanced circuit": 5,
+      "Steel plate": 10,
+      "Stone brick": 10
+    }
+  },
+
+  "Assembling machine 1": {
+    "units_per_time": 2,
+    "requires": {
+      "Electronic circuit": 3,
+      "Iron gear wheel": 5,
+      "Iron plate": 9
+    }
+  },
+
+  "Assembling machine 2": {
+    "units_per_time": 2,
+    "requires": {
+      "Assembling machine 1": 1,
+      "Electronic circuit": 3,
+      "Iron gear wheel": 5,
+      "Steel plate": 2
+    }
+  },
+
+  "Assembling machine 3": {
+    "units_per_time": 2,
+    "requires": {
+      "Assembling machine 2": 2,
+      "Speed module": 4
+    }
+  },
+
+  "Oil refinery": {
+    "units_per_time": 0.125,
+    "requires": {
+      "Electronic circuit": 10,
+      "Iron gear wheel": 10,
+      "Pipe": 10,
+      "Steel plate": 15,
+      "Stone brick": 10
+    }
+  },
+
+  "Chemical plant": {
+    "units_per_time": 0.2,
+    "requires": {
+      "Electronic circuit": 5,
+      "Iron gear wheel": 5,
+      "Pipe": 5,
+      "Steel plate": 5
+    }
+  },
+
+  "Centrifuge": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Advanced circuit": 100,
+      "Concrete": 100,
+      "Iron gear wheel": 100,
+      "Steel plate": 50
+    }
+  },
+
+  "Lab": {
+    "units_per_time": 0.5,
+    "requires": {
+      "Electronic circuit": 10,
+      "Iron gear wheel": 10,
+      "Transport belt": 4
+    }
+  },
+
+  "Beacon": {
+    "units_per_time": 0.066666667,
+    "requires": {
+      "Advanced circuit": 20,
+      "Copper cable": 10,
+      "Electronic circuit": 20,
+      "Steel plate": 10
+    }
+  },
+
+  "Speed module": {
+    "units_per_time": 0.066666667,
+    "requires": {
+      "Advanced circuit": 5,
+      "Electronic circuit": 5
+    }
+  },
+
+  "Speed module 2": {
+    "units_per_time": 0.033333333,
+    "requires": {
+      "Advanced circuit": 5,
+      "Processing unit": 5,
+      "Speed module": 4
+    }
+  },
+
+  "Speed module 3": {
+    "units_per_time": 0.016666667,
+    "requires": {
+      "Advanced circuit": 5,
+      "Processing unit": 5,
+      "Speed module 2": 5
+    }
+  },
+
+  "Efficiency module": {
+    "units_per_time": 0.066666667,
+    "requires": {
+      "Advanced circuit": 5,
+      "Electronic circuit": 5
+    }
+  },
+
+  "Efficiency module 2": {
+    "units_per_time": 0.033333333,
+    "requires": {
+      "Advanced circuit": 5,
+      "Processing unit": 5,
+      "Efficiency module": 4
+    }
+  },
+
+  "Efficiency module 3": {
+    "units_per_time": 0.016666667,
+    "requires": {
+      "Advanced circuit": 5,
+      "Processing unit": 5,
+      "Efficiency module 2": 5
+    }
+  },
+
+  "Productivity module": {
+    "units_per_time": 0.066666667,
+    "requires": {
+      "Advanced circuit": 5,
+      "Electronic circuit": 5
+    }
+  },
+
+  "Productivity module 2": {
+    "units_per_time": 0.033333333,
+    "requires": {
+      "Advanced circuit": 5,
+      "Processing unit": 5,
+      "Efficiency module": 4
+    }
+  },
+
+  "Productivity module 3": {
+    "units_per_time": 0.016666667,
+    "requires": {
+      "Advanced circuit": 5,
+      "Processing unit": 5,
+      "Efficiency module 2": 5
+    }
+  },
+
+  "Rocket silo": {
+    "units_per_time": 0.033333333,
+    "requires": {
+      "Concrete": 1000,
+      "Electric engine unit": 200,
+      "Pipe": 100,
+      "Processing unit": 200,
+      "Steel plate": 1000
+    }
+  },
+
+  "Satellite": {
+    "units_per_time": 0.25,
+    "requires": {
+      "Accumulator": 100,
+      "Low density structure": 100,
+      "Processing unit": 100,
+      "Radar": 5,
+      "Rocket fuel": 5,
+      "Solar panel": 100
+    }
+  },
+
+  "Radar": {
+    "units_per_time": 1
   }
 }
